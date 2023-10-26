@@ -16,109 +16,127 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <a class="navbar-brand mt-2 mt-lg-0" href="#">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-              height="15"
-              alt="MDB Logo"
-              loading="lazy"
-            />
-          </a>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-1">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Livros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mangás</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Promoções</a>
-            </li>
-          </ul>
-        </div>
-        <div class="container-fluid col-8 col-sm-6 col-md-5 col-lg-3">
-          <form class="d-flex input-group">
-            <input
-              type="search"
-              class="form-control rounded"
-              placeholder="Busque seu mangá aqui"
-              aria-label="Search"
-              aria-describedby="search-addon"
-            />
-            <span class="input-group-text border-0" id="search-addon">
-              <i class="fas fa-search"></i>
-            </span>
-          </form>
-        </div>
-        <div class="d-flex align-items-center">
-          <a class="link-secondary me-3" href="#">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-          <div class="dropdown">
-            <a
-              class="dropdown-toggle d-flex align-items-center hidden-arrow"
-              href="#"
-              id="navbarDropdownMenuAvatar"
-              role="button"
-              data-mdb-toggle="dropdown"
-              aria-expanded="false"
-            >
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand mt-2 mt-lg-0" href="#">
               <img
-                src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                class="rounded-circle"
-                height="25"
-                alt="Black and White Portrait of a Man"
+                src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+                height="15"
+                alt="MDB Logo"
                 loading="lazy"
               />
             </a>
-            <ul
-              class="dropdown-menu dropdown-menu-end"
-              aria-labelledby="navbarDropdownMenuAvatar"
-            >
-              <li>
-                <a class="dropdown-item" href="#">My profile</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Livros</a>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">Settings</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mangás</a>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">Logout</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Promoções</a>
               </li>
             </ul>
           </div>
+          <div class="container-fluid col-8 col-sm-6 col-md-5 col-lg-3">
+            <form class="d-flex input-group">
+              <input
+                type="search"
+                class="form-control rounded"
+                placeholder="Busque seu mangá aqui"
+                aria-label="Search"
+                aria-describedby="search-addon"
+              />
+              <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+              </span>
+            </form>
+          </div>
+          <div class="d-flex align-items-center">
+            <a class="link-secondary me-3" href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                href="#"
+                id="navbarDropdownMenuAvatar"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                  class="rounded-circle"
+                  height="25"
+                  alt="Black and White Portrait of a Man"
+                  loading="lazy"
+                />
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownMenuAvatar"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">Perfil</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Configurações</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Sair</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Right elements -->
         </div>
-        <!-- Right elements -->
+        <!-- Container wrapper -->
+      </nav>
+      <div
+        class="p-5 text-center bg-image"
+        style="
+          background-image: url('https://i.pinimg.com/originals/66/46/cb/6646cb7a239935ea9b3fd6c13e082a81.jpg');
+          height: 400px;
+        "
+      >
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <img src="img\banner-central.png" alt="" class="w-70" />
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Container wrapper -->
-    </nav>
+    </header>
     <main>
-      <div class="p-5 centraliza-cards">
+      <hr class="hr hr-blurry" />
+      <div class="p-2 centraliza-cards">
         <div class="col-12 col-xl-8 row">
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-4">
-            <div class="card w-100 shadow-5-strong">
+            <div class="card cardview w-100 shadow-5-strong">
               <div class="mx-auto w-70 pt-3">
                 <img
-                  src="https://johto.legiaodosherois.com.br/wp-content/uploads/2021/08/legiao_4YmvHICdo9Zu.jpg"
+                  src="img\manga\onepiece.jpg"
                   class="card-img-top img-fluid shadow-5-strong"
                   alt="Capa"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title">One Piece vol. 100</h5>
+                <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
                   <button type="button" class="btn btn-dark btn-rounded">
@@ -132,13 +150,13 @@
             <div class="card w-100 shadow-5-strong">
               <div class="mx-auto w-70 pt-3">
                 <img
-                  src="https://johto.legiaodosherois.com.br/wp-content/uploads/2021/08/legiao_4YmvHICdo9Zu.jpg"
+                  src="img\manga\onepiece.jpg"
                   class="card-img-top img-fluid shadow-5-strong"
                   alt="Capa"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title">One Piece vol. 100</h5>
+                <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
                   <button type="button" class="btn btn-dark btn-rounded">
@@ -152,13 +170,13 @@
             <div class="card w-100 shadow-5-strong">
               <div class="mx-auto w-70 pt-3">
                 <img
-                  src="https://johto.legiaodosherois.com.br/wp-content/uploads/2021/08/legiao_4YmvHICdo9Zu.jpg"
+                  src="img\manga\onepiece.jpg"
                   class="card-img-top img-fluid shadow-5-strong"
                   alt="Capa"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title">One Piece vol. 100</h5>
+                <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
                   <button type="button" class="btn btn-dark btn-rounded">
@@ -172,13 +190,13 @@
             <div class="card w-100 shadow-5-strong">
               <div class="mx-auto w-70 pt-3">
                 <img
-                  src="https://johto.legiaodosherois.com.br/wp-content/uploads/2021/08/legiao_4YmvHICdo9Zu.jpg"
+                  src="img\manga\onepiece.jpg"
                   class="card-img-top img-fluid shadow-5-strong"
                   alt="Capa"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title">One Piece vol. 100</h5>
+                <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
                   <button type="button" class="btn btn-dark btn-rounded">
@@ -192,13 +210,13 @@
             <div class="card w-100 shadow-5-strong">
               <div class="mx-auto w-70 pt-3">
                 <img
-                  src="https://johto.legiaodosherois.com.br/wp-content/uploads/2021/08/legiao_4YmvHICdo9Zu.jpg"
+                  src="img\manga\onepiece.jpg"
                   class="card-img-top img-fluid shadow-5-strong"
                   alt="Capa"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title">One Piece vol. 100</h5>
+                <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
                   <button type="button" class="btn btn-dark btn-rounded">
@@ -212,13 +230,13 @@
             <div class="card w-100 shadow-5-strong">
               <div class="mx-auto w-70 pt-3">
                 <img
-                  src="https://johto.legiaodosherois.com.br/wp-content/uploads/2021/08/legiao_4YmvHICdo9Zu.jpg"
+                  src="img\manga\onepiece.jpg"
                   class="card-img-top img-fluid shadow-5-strong"
                   alt="Capa"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title">One Piece vol. 100</h5>
+                <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
                   <button type="button" class="btn btn-dark btn-rounded">
@@ -232,13 +250,13 @@
             <div class="card w-100 shadow-5-strong">
               <div class="mx-auto w-70 pt-3">
                 <img
-                  src="https://johto.legiaodosherois.com.br/wp-content/uploads/2021/08/legiao_4YmvHICdo9Zu.jpg"
+                  src="img\manga\onepiece.jpg"
                   class="card-img-top img-fluid shadow-5-strong"
                   alt="Capa"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title">One Piece vol. 100</h5>
+                <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
                   <button type="button" class="btn btn-dark btn-rounded">
@@ -252,53 +270,13 @@
             <div class="card w-100 shadow-5-strong">
               <div class="mx-auto w-70 pt-3">
                 <img
-                  src="https://johto.legiaodosherois.com.br/wp-content/uploads/2021/08/legiao_4YmvHICdo9Zu.jpg"
+                  src="img\manga\onepiece.jpg"
                   class="card-img-top img-fluid shadow-5-strong"
                   alt="Capa"
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title">One Piece vol. 100</h5>
-                <p class="card-text">R$ 34,99</p>
-                <div class="text-end">
-                  <button type="button" class="btn btn-dark btn-rounded">
-                    Carrinho
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-4">
-            <div class="card w-100 shadow-5-strong">
-              <div class="mx-auto w-70 pt-3">
-                <img
-                  src="https://johto.legiaodosherois.com.br/wp-content/uploads/2021/08/legiao_4YmvHICdo9Zu.jpg"
-                  class="card-img-top img-fluid shadow-5-strong"
-                  alt="Capa"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">One Piece vol. 100</h5>
-                <p class="card-text">R$ 34,99</p>
-                <div class="text-end">
-                  <button type="button" class="btn btn-dark btn-rounded">
-                    Carrinho
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-4">
-            <div class="card w-100 shadow-5-strong">
-              <div class="mx-auto w-70 pt-3">
-                <img
-                  src="https://johto.legiaodosherois.com.br/wp-content/uploads/2021/08/legiao_4YmvHICdo9Zu.jpg"
-                  class="card-img-top img-fluid shadow-5-strong"
-                  alt="Capa"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">One Piece vol. 100</h5>
+                <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
                   <button type="button" class="btn btn-dark btn-rounded">
@@ -309,29 +287,45 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center pb-4">
+        <button type="button" class="btn btn-outline-dark">Carregar mais</button>
       </div>
     </main>
     <footer class="bg-dark text-center text-white">
       <div class="background-footer">
+        <!-- <img src="https://i.pinimg.com/originals/66/46/cb/6646cb7a239935ea9b3fd6c13e082a81.jpg" alt="" class="footer-back"> -->
         <div class="container p-4 pb-0">
           <section class="mb-4">
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998"
+              href="#!"
+              role="button"
               ><i class="fab fa-facebook-f"></i
             ></a>
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee"
+              href="#!"
+              role="button"
               ><i class="fab fa-twitter"></i
             ></a>
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-google"></i
-            ></a>
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac"
+              href="#!"
+              role="button"
               ><i class="fab fa-instagram"></i
             ></a>
           </section>
         </div>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.7);">
-          © 2020 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.7)"
+        >
+          © 2023 Copyright:
+          <a class="text-white" href="">Luan e Vitor</a>
         </div>
       </div>
     </footer>
