@@ -6,6 +6,10 @@
   width: 60%;
 }
 
+.h-70 {
+  height: 70%;
+}
+
 .centraliza-cards {
   display: flex;
   justify-content: center;
