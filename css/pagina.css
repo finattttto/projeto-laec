@@ -22,3 +22,12 @@
   z-index: 0;
 }
 
+.card:hover{
+  transform: scale(1.03); 
+  cursor: pointer;
+}
+
+.carrinho:hover{
+  transform: scale(1.05); 
+  cursor: pointer;
+}

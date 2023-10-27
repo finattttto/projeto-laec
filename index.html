@@ -17,95 +17,7 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a class="navbar-brand mt-2 mt-lg-0" href="#">
-              <img
-                src="img\icon2.png"
-                height="40"
-                alt="MDB Logo"
-                loading="lazy"
-              />
-            </a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-1">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Livros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Mangás</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Promoções</a>
-              </li>
-            </ul>
-          </div>
-          <div class="container-fluid col-8 col-sm-6 col-md-5 col-lg-3">
-            <form class="d-flex input-group">
-              <input
-                type="search"
-                class="form-control rounded"
-                placeholder="Busque seu mangá aqui"
-                aria-label="Search"
-                aria-describedby="search-addon"
-              />
-              <span class="input-group-text border-0" id="search-addon">
-                <i class="fas fa-search"></i>
-              </span>
-            </form>
-          </div>
-          <div class="d-flex align-items-center">
-            <a class="link-secondary me-3" href="#">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
-            <div class="dropdown">
-              <a
-                class="dropdown-toggle d-flex align-items-center hidden-arrow"
-                href="#"
-                id="navbarDropdownMenuAvatar"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                  class="rounded-circle"
-                  height="25"
-                  alt="Black and White Portrait of a Man"
-                  loading="lazy"
-                />
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdownMenuAvatar"
-              >
-                <li>
-                  <a class="dropdown-item" href="#">Perfil</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Configurações</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Sair</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Right elements -->
-        </div>
-        <!-- Container wrapper -->
-      </nav>
+      <div id="appHeader"></div>
       <div
         class="p-5 text-center bg-image"
         style="
@@ -139,7 +51,7 @@
                 <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
-                  <button type="button" class="btn btn-dark btn-rounded">
+                  <button type="button" class="btn btn-dark btn-rounded carrinho">
                     Carrinho
                   </button>
                 </div>
@@ -159,7 +71,7 @@
                 <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
-                  <button type="button" class="btn btn-dark btn-rounded">
+                  <button type="button" class="btn btn-dark btn-rounded carrinho">
                     Carrinho
                   </button>
                 </div>
@@ -179,7 +91,7 @@
                 <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
-                  <button type="button" class="btn btn-dark btn-rounded">
+                  <button type="button" class="btn btn-dark btn-rounded carrinho">
                     Carrinho
                   </button>
                 </div>
@@ -199,7 +111,7 @@
                 <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
-                  <button type="button" class="btn btn-dark btn-rounded">
+                  <button type="button" class="btn btn-dark btn-rounded carrinho">
                     Carrinho
                   </button>
                 </div>
@@ -219,7 +131,7 @@
                 <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
-                  <button type="button" class="btn btn-dark btn-rounded">
+                  <button type="button" class="btn btn-dark btn-rounded carrinho">
                     Carrinho
                   </button>
                 </div>
@@ -239,7 +151,7 @@
                 <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
-                  <button type="button" class="btn btn-dark btn-rounded">
+                  <button type="button" class="btn btn-dark btn-rounded carrinho">
                     Carrinho
                   </button>
                 </div>
@@ -259,7 +171,7 @@
                 <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
-                  <button type="button" class="btn btn-dark btn-rounded">
+                  <button type="button" class="btn btn-dark btn-rounded carrinho">
                     Carrinho
                   </button>
                 </div>
@@ -279,7 +191,7 @@
                 <h6 class="card-title">One Piece vol. 100</h6>
                 <p class="card-text">R$ 34,99</p>
                 <div class="text-end">
-                  <button type="button" class="btn btn-dark btn-rounded">
+                  <button type="button" class="btn btn-dark btn-rounded carrinho">
                     Carrinho
                   </button>
                 </div>
@@ -288,140 +200,29 @@
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center align-items-center pb-4">
+      <!-- <div class="d-flex justify-content-center align-items-center pb-4">
         <button type="button" class="btn btn-outline-dark">
           Carregar mais
         </button>
-      </div>
-    </main>
-    <!-- <footer class="bg-dark text-center text-white">
-      <div class="background-footer">
-        <div class="container p-4 pb-0">
-          <section class="mb-4">
-            <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #3b5998"
-              href="#!"
-              role="button"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #55acee"
-              href="#!"
-              role="button"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #ac2bac"
-              href="#!"
-              role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </section>
-        </div>
-        <div
-          class="text-center p-3"
-          style="background-color: rgba(0, 0, 0, 0.7)"
-        >
-          © 2023 Copyright:
-          <a class="text-white" href="">Luan e Vitor</a>
-        </div>
-      </div>
-    </footer> -->
-    <!-- Footer -->
-    <!-- Footer -->
-    <footer class="bg-dark text-center text-white">
-      <div class="container p-4">
-        <section class="">
-          <form action="">
-            <div class="row d-flex justify-content-center">
-              <div class="col-auto">
-                <p class="pt-2">
-                  <strong>Inscreva-se para receber nossas promoções</strong>
-                </p>
-              </div>
-              <div class="col-md-5 col-12">
-                <!-- Email input -->
-                <div class="form-outline form-white mb-4">
-                  <input
-                    type="email"
-                    id="form5Example21"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="form5Example21"
-                    >Email</label
-                  >
-                </div>
-              </div>
-              <div class="col-auto">
-                <button type="submit" class="btn btn-outline-light mb-4">
-                  Enviar
-                </button>
-              </div>
-            </div>
-          </form>
-        </section>
-        <section class="mb-4">
-          <p>
-            Aqui fica algumas informações sobre a loja / site.
-          </p>
-        </section>
-        <!-- Section: Text -->
-
-        <!-- Section: Links -->
-        <section class="">
-          <!--Grid row-->
-          <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-              <img src="img\icon2.png" alt="">
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-              <h5 class="">Conheça-nos</h5>
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-white">mangayabu@atendimento.com</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Pato Branco - PR</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">10.203.040/0001-50</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Mais informações</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-              <h5 class="">Pagamento</h5>
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-white">Compre com pontos</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Cartão de crédito</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Boleto</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Bitcoin</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2023 Copyright:
-        <a class="text-white" href="#">Luan&Vitor</a>
-      </div>
-    </footer>
+      </div> -->
+      <nav aria-label="...">
+        <ul class="pagination pagination-sm justify-content-center p-3">
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">
+              1
+              <span class="visually-hidden">(current)</span>
+            </span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+        </ul>
+      </nav>
+    </main> 
+    <div id="appFooter"></div>
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
     ></script>
+    <script src="js/app.js" type="module"></script>
   </body>
 </html>
