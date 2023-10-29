@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/produto.css" />
+</head>
+
+<body>
+    <header>
+        <div id="appHeader"></div>
+        <div class="p-5 text-center bg-image" style="
+            background-image: url('https://i.pinimg.com/originals/66/46/cb/6646cb7a239935ea9b3fd6c13e082a81.jpg');
+            height: 400px;
+          ">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <img src="img\banner-central.png" alt="" class="w-70" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class=" d-flex justify-content-center p-4">
+        <div class="d-flex w-60 ">
+            <div class=" d-flex justify-content-center">
+                <img src="img/manga/onepiece.jpg" alt="" class="w-60 ">
+            </div>
+            <div class="d-flex flex-column justify-content-between w-60">
+                <div class="mb-4">
+                    <h1>Mangá One Piece vol 100</h1>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <div>
+                        <button type="button" class="btn bg-light btn-floating"> <i data-feather="heart"></i></button>
+                    </div>
+                </div>
+                <div>
+                    <h1>R$ 200</h1>
+                </div>
+                <div class="bg-secondary mb-6 p-2 border border-dark">
+                    <form action="" class="d-flex  justify-content-between mb-3">
+                        <label for="calculaFrete" class="text-dark bold fs-6 d-flex align-items-center">Calcular
+                            frete</label>
+                        <input type="text" , name="calculaFrete" class="m-2">
+                        <button type="submit" class="btn btn-primary bg-success"> Calcular</button>
+                    </form>
+                    <div class="d-flex justify-content-between ">
+                        <p class=" text-dark fw-bold">R$ 15,90</p>
+                        <p class=" text-dark fw-bold">Frete normal</p>
+                    </div>
+                    <div class="d-flex justify-content-between ">
+                        <p class=" text-dark fw-bold">R$ 30,00</p>
+                        <p class=" text-dark fw-bold">Express</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column mb-4 ">
+                    <button type="button" class="btn btn-primary bg-success mb-4 fw-bold fs-4 carrinho">
+                        <i data-feather="shopping-cart" class="me-3"></i> Adicionar ao carrinho
+                    </button>
+                    <button type="button" class="btn btn-primary bg-success mb-4 fw-bold fs-4 carrinho">Comprar
+                        Agora</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class=" d-flex justify-content-center">
+        <div></div>
+        <div class=" bg-secondary w-70  p-3 mb-4">
+            <h2>Mangá One Piece vol 100</h2>
+            <p>Capa Dura</p>
+            <p>Original </p>
+            <p>Sinopse: Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda libero ex est rerum suscipit
+                illo officiis velit rem. </p>
+        </div>
+        <div></div>
+    </div>
+
+
+    <div id="appFooter"></div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    <script src="js/app.js" type="module"></script>
+    <script>
+        feather.replace();
+    </script>
+
+
+
+</body>
+
+</html>
