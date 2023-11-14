@@ -1,0 +1,35 @@
+.w-10 {
+  width: 10%;
+}
+
+.w-70 {
+    width: 70%;
+  }
+  
+  .w-60 {
+    width: 60%;
+  }
+  
+  .w-60 {
+    width: 60%;
+  }
+  
+  .h-70 {
+    height: 70%;
+  }
+
+  .h-15 {
+    height: 15%;
+  }
+  
+  .centraliza-cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .background-footer {
+    background-image: url('https://i.pinimg.com/originals/66/46/cb/6646cb7a239935ea9b3fd6c13e082a81.jpg');
+    background-size: cover; 
+    opacity: 0.7;
+    z-index: 0;
+  }
