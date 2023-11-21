@@ -73,7 +73,7 @@ export const headerComponent =
                 aria-labelledby="navbarDropdownMenuAvatar"
               >
                 <li>
-                  <a class="dropdown-item" href="#">Perfil</a>
+                  <a class="dropdown-item" href="login.html">Perfil</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">Configurações</a>

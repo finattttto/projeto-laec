@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nome": "One Piece vol. 100",
+        "preco": "R$ 34,99",
+        "imagem": "img/manga/onepiece.jpg"
+    },
+    {
+        "id": 2,
+        "nome": "One Piece vol. 100",
+        "preco": "R$ 34,99",
+        "imagem": "img/manga/onepiece.jpg"
+    },
+    {
+        "id": 3,
+        "nome": "One Piece vol. 100",
+        "preco": "R$ 34,99",
+        "imagem": "img/manga/onepiece.jpg"
+    },
+    {
+        "id": 4,
+        "nome": "One Piece vol. 100",
+        "preco": "R$ 34,99",
+        "imagem": "img/manga/onepiece.jpg"
+    },
+    {
+        "id": 5,
+        "nome": "One Piece vol. 100",
+        "preco": "R$ 34,99",
+        "imagem": "img/manga/onepiece.jpg"
+    },
+    {
+        "id": 6,
+        "nome": "One Piece vol. 100",
+        "preco": "R$ 34,99",
+        "imagem": "img/manga/onepiece.jpg"
+    },
+    {
+        "id": 7,
+        "nome": "One Piece vol. 100",
+        "preco": "R$ 34,99",
+        "imagem": "img/manga/onepiece.jpg"
+    },
+    {
+        "id": 8,
+        "nome": "One Piece vol. 100",
+        "preco": "R$ 34,99",
+        "imagem": "img/manga/onepiece.jpg"
+    },
+    {
+        "id": 9,
+        "nome": "One Piece vol. 100",
+        "preco": "R$ 34,99",
+        "imagem": "img/manga/onepiece.jpg"
+    },
+    {
+        "id": 10,
+        "nome": "One Piece vol. 100",
+        "preco": "R$ 34,99",
+        "imagem": "img/manga/onepiece.jpg"
+    },
+    {
+        "id": 11,
+        "nome": "One Piece vol. 100",
+        "preco": "R$ 34,99",
+        "imagem": "img/manga/onepiece.jpg"
+    },
+    {
+        "id": 12,
+        "nome": "One Piece vol. 100",
+        "preco": "R$ 34,99",
+        "imagem": "img/manga/onepiece.jpg"
+    }
+]

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrinho</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
@@ -13,27 +13,32 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
-</head>
-<body>
+  </head>
+
+  <body>
     <header>
-        <div id="appHeader"></div>
-        <div
-          class="p-5 text-center bg-image"
-          style="background-image: url('https://i.pinimg.com/originals/66/46/cb/6646cb7a239935ea9b3fd6c13e082a81.jpg');height: 400px;">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white">
-                <img src="img\banner-central.png" alt="" class="w-70" />
-              </div>
+      <div id="appHeader"></div>
+      <div
+        class="p-5 text-center bg-image"
+        style="
+          background-image: url('https://i.pinimg.com/originals/66/46/cb/6646cb7a239935ea9b3fd6c13e082a81.jpg');
+          height: 400px;
+        "
+      >
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <img src="img\banner-central.png" alt="" class="w-70" />
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <div class=" d-flex justify-content-center p-4">
+    <div class="d-flex justify-content-center p-4">
       <div class="d-flex w-60">
         <div class="flex-grow-1 border border-warning">
-            <nav class="h-15">
+          <!-- <nav class="h-15">
                 <h1 class="p-4">Itens do Carrinho</h1>
             </nav>
             <div class="border p-4">
@@ -47,17 +52,31 @@
                     Mangá one Piece
                 </h2>
                 <img src="img/manga/onepiece.jpg" alt="" class="w-10 ">
-            </div>
+            </div> -->
+          <table id="tbProducts" class="table table-hover">
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+                <!-- <th>Imagem</th> -->
+                <th>Excluir</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         </div>
-        <div class=" border border-warning">
-            <h1>Checkout</h1>
+        <div class="border border-warning">
+          <h1>Checkout</h1>
         </div>
       </div>
     </div>
-    
-      <div id="appFooter"></div>
-      <script>
-        feather.replace();
+    <div id="appFooter"></div>
+    <script src="./js/app.js"></script>
+    <script>
+      feather.replace();
     </script>
-</body>
+    <script src="./js/carrinho/carrinho.js"></script>
+  </body>
 </html>

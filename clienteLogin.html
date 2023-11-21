@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Login</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" id="form-add" action="">
+                            <div class="form-group mt-2">
+                                <label for="email">E-mail</label>
+                                <input type="text" id="email" name="email" class="form-control validar email" />
+                            </div>
+                            <div class="form-group mt-2">
+                                <label for="senha">Senha</label>
+                                <input type="text" id="senha" name="senha" class="form-control validar senha" />
+                            </div>
+                            <div class="center mt-5">
+                                <input type="submit" value="Login" class="btn btn-outline-danger" name="btLog" id="btLogin" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./js/cliente/login.js" type="module"></script>
+</body>
+
+</html>
