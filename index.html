@@ -17,7 +17,9 @@
 
   <body>
     <header>
+
       <div id="appHeader"></div>
+
       <div
         class="p-5 text-center bg-image"
         style="
@@ -36,7 +38,9 @@
     </header>
     <main>
       <hr class="hr hr-blurry" />
+      
       <div id="produtos"></div>
+      
       <!-- <div class="d-flex justify-content-center align-items-center pb-4">
         <button type="button" class="btn btn-outline-dark">
           Carregar mais
@@ -55,7 +59,10 @@
         </ul>
       </nav>
     </main>
-    <div id="appFooter"></div>
+
+    <!-- tive que por a class aqui pq no createElement tava bugando -->
+    <div id="appFooter" class="bg-dark text-center text-white"></div>
+    
     <script src="./js/carrinho/produtos.js" type="module"></script>
     <script src="./js/app.js" type="module"></script>
   </body>

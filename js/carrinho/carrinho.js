@@ -1,3 +1,14 @@
+import { createFooterComponent } from "../components/footer.js";
+import { createHeaderComponent } from "../components/header.js";
+
+
+window.onload = async function () {
+    document.getElementById('appHeader2').innerHTML = await createHeaderComponent();
+    document.getElementById('appFooter2').innerHTML = await createFooterComponent();
+    // console.log('teste carrinho');
+     await carregarProdutosStorage();
+}
+
 function novoProdutoTr(produto) {
     const novaTr = document.createElement('tr');
     novaTr.innerHTML =
@@ -14,15 +25,11 @@ function addProdutoTabela(produto) {
     tableBody.appendChild(novoProdutoTr(produto));
 }
 
-function carregarProdutosStorage() {
+async function carregarProdutosStorage() {
     const arrayProdutos = JSON.parse(localStorage.getItem('carrinho'));
     arrayProdutos.forEach(prod => {
         addProdutoTabela(prod);
     });
 }
 
-window.onload = function () {
-    console.log('teste carrinho');
-    carregarProdutosStorage();
-}
 

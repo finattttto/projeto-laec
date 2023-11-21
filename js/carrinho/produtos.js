@@ -1,4 +1,4 @@
-import { Produto } from "./Produto";
+
 
 // const btAddCarrinho = document.getElementById('btAddCarrinho');
 
@@ -43,3 +43,9 @@ function salvarLocalStorage(produto) { //produto é o objeto
 
 
 // }
+
+export class Produto {
+    nome;
+    preco;
+    quant;
+}

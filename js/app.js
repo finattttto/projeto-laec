@@ -1,24 +1,24 @@
-import { footerComponent } from "./components/footer.js";
-import { headerComponent } from "./components/header.js";
-import { Produto } from "./carrinho/Produto.js";
+import { createFooterComponent } from "./components/footer.js";
+import { createHeaderComponent } from "./components/header.js";
+// import { Produto } from "./carrinho/Produto.js";
 
 const container = document.getElementById('produtos');
 
-window.onload = async function(){
-    document.getElementById('appHeader').innerHTML = headerComponent;
-    document.getElementById('appFooter').innerHTML = footerComponent;
+window.onload = async function () {
+    document.getElementById('appHeader').innerHTML = await createHeaderComponent();
+    document.getElementById('appFooter').innerHTML = await createFooterComponent();
 
-    await renderCards();
+    await carregaCardsProdutos();
 }
 
-async function renderCards() {
-    const cardData = await fetchCardData();
+async function carregaCardsProdutos() {
+    const cardData = await buscaDadosProdutos();
 
     const cardContainer = document.createElement('div');
     cardContainer.className = 'col-12 col-xl-8 row';
 
     cardData.forEach(data => {
-        const card = createCard(data);
+        const card = criaCard(data);
         cardContainer.appendChild(card);
     });
 
@@ -29,7 +29,7 @@ async function renderCards() {
     container.appendChild(centralizaCards);
 }
 
-async function fetchCardData() {
+async function buscaDadosProdutos() {
     try {
         const response = await fetch('data/produtos.json');
         const data = await response.json();
@@ -40,7 +40,7 @@ async function fetchCardData() {
     }
 }
 
-function createCard(cardData) {
+function criaCard(cardData) {
     const card = document.createElement('div');
     card.className = 'col-12 col-sm-6 col-md-4 col-lg-3 p-4';
 
@@ -70,23 +70,28 @@ function createCard(cardData) {
         const nome = document.querySelector('.card-title').textContent;
         const preco = document.querySelector('.card-text').textContent;
         const quant = 1;
-    
+
         const produto = new Produto(nome, preco, quant); //criando o objeto por meio de uma classe
         salvarLocalStorage(produto);
-    
+
         console.log("nome: " + produto.nome + "\npreco: " + produto.preco + "\nquant: " + produto.quant);
         alert("Produto adicionado ao carrinho!");
     })
-    
+
     return card;
 }
 
-
 //Adicionar o item ao localStorage do carrinho
 const arrayCarrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    
-    function salvarLocalStorage(produto) { //produto é o objeto
-        arrayCarrinho.push(produto); //insere o produto no array
-        //salvar no storage
-        localStorage.setItem('carrinho', JSON.stringify(arrayCarrinho));
-    }
+
+function salvarLocalStorage(produto) { //produto é o objeto
+    arrayCarrinho.push(produto); //insere o produto no array
+    //salvar no storage
+    localStorage.setItem('carrinho', JSON.stringify(arrayCarrinho));
+}
+
+export class Produto {
+    nome;
+    preco;
+    quant;
+}
