@@ -11,47 +11,6 @@ function createSubscribeParagraph() {
   return paragraph;
 }
 
-function createEmailInput() {
-  const emailInput = document.createElement('div');
-  emailInput.classList.add('form-outline', 'form-white', 'mb-4');
-
-  const input = document.createElement('input');
-  input.type = 'email';
-  input.id = 'form5Example21';
-  input.classList.add('form-control');
-
-  const label = document.createElement('label');
-  label.classList.add('form-label');
-  label.setAttribute('for', 'form5Example21');
-  label.textContent = 'Email';
-
-  emailInput.appendChild(input);
-  emailInput.appendChild(label);
-
-  return emailInput;
-}
-
-function createSubmitButton() {
-  const submitButton = document.createElement('div');
-  submitButton.classList.add('col-auto');
-
-  const button = document.createElement('button');
-  button.type = 'submit';
-  button.classList.add('btn', 'btn-outline-light', 'mb-4');
-  button.textContent = 'Enviar';
-
-  submitButton.appendChild(button);
-
-  return submitButton;
-}
-
-function createColumnAuto() {
-  const colAuto = document.createElement('div');
-  colAuto.classList.add('col-auto');
-
-  return colAuto;
-}
-
 function createInfoSection() {
   const infoSection = document.createElement('section');
   infoSection.classList.add('mb-4');

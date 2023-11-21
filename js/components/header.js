@@ -134,17 +134,17 @@ async function criarLogin() {
 
   if (logado === "true") {
     botaoLogin.textContent = "Sair";
-    botaoLogin.addEventListener("click", function() {
-      // Adicione aqui a lógica para fazer logout (se necessário)
+    botaoLogin.addEventListener("click", async function() {
+      e.preventDefault();
+      console.log('Sair');
       localStorage.setItem("logado", "false");
-      // Redirecione para a página de login
       window.location.href = "clientelogin.html";
     });
   } else {
     botaoLogin.textContent = "Entrar";
-    botaoLogin.addEventListener("click", function(e) {
+    botaoLogin.addEventListener("click", async function(e) {
       e.preventDefault();
-      // Redirecione para a página de login
+
       window.location.href = "index.html";
       console.log('Entrando');
     });
