@@ -1,5 +1,6 @@
 import { footerComponent } from "./components/footer.js";
 import { headerComponent } from "./components/header.js";
+import { Produto } from "./carrinho/Produto.js";
 
 const container = document.getElementById('produtos');
 
@@ -43,6 +44,7 @@ function createCard(cardData) {
     const card = document.createElement('div');
     card.className = 'col-12 col-sm-6 col-md-4 col-lg-3 p-4';
 
+    //Construindo o card
     card.innerHTML = `
         <div class="card w-100 shadow-5-strong">
             <div class="mx-auto w-70 pt-3">
@@ -60,10 +62,31 @@ function createCard(cardData) {
         </div>
     `;
 
-    // Adiciona um evento de clique ao botão "Carrinho" diretamente
-    const btnCarrinhoCard = card.querySelector('.carrinho')
-    addFuncaoAddAoCarrinho(btnCarrinhoCard);
+    //Implementando função de adicionar ao carrinho no botão 'carrinho' do card
+    card.querySelector('.carrinho').addEventListener('click', function (e) {
+
+        e.preventDefault();
+
+        const nome = document.querySelector('.card-title').textContent;
+        const preco = document.querySelector('.card-text').textContent;
+        const quant = 1;
+    
+        const produto = new Produto(nome, preco, quant); //criando o objeto por meio de uma classe
+        salvarLocalStorage(produto);
+    
+        console.log("nome: " + produto.nome + "\npreco: " + produto.preco + "\nquant: " + produto.quant);
+        alert("Produto adicionado ao carrinho!");
+    })
     
     return card;
 }
 
+
+//Adicionar o item ao localStorage do carrinho
+const arrayCarrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    
+    function salvarLocalStorage(produto) { //produto é o objeto
+        arrayCarrinho.push(produto); //insere o produto no array
+        //salvar no storage
+        localStorage.setItem('carrinho', JSON.stringify(arrayCarrinho));
+    }
