@@ -20,18 +20,19 @@
                 <div class="card">
                     <div class="card-header">
                         <h3 class="card-title">Cadastro</h3>
+                        <h6 class="p-1">Todos os campos são de preechimento obrigatório!</h6>
                     </div>
                     <div class="card-body">
                         <form method="post" id="form-cadastro" action="">
                             <h5 class="mt-1">Dados pessoais</h5>
                             <div class="row mb-3 mt-3">
                                 <div class="col">
-                                    <label for="nome" class="form-label">Nome:</label>
+                                    <label for="nome" class="form-label">Nome: *</label>
                                     <input type="text" class="form-control required" id="name" name="nome">
                                     <span class="error-message" id="erro-nome"></span>
                                 </div>
                                 <div class="col">
-                                    <label for="cpf" class="form-label">CPF:</label>
+                                    <label for="cpf" class="form-label">CPF: *</label>
                                     <input type="text" class="form-control required" id="cpf" name="cpf">
                                     <span class="error-message" id="erro-cpf"></span>
                                 </div> 
@@ -49,6 +50,18 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
+                                <div class="col">
+                                    <label for="senha" class="form-label">Senha:</label>
+                                    <input type="password" class="form-control required" id="senha" name="senha">
+                                    <span class="error-message" id="erro-senha"></span>
+                                </div>
+                                <div class="col">
+                                    <label for="senha-conf" class="form-label">Confirme a senha:</label>
+                                    <input type="password" class="form-control required" id="senha-conf" name="senha-conf">
+                                    <span class="error-message" id="erro-senha-conf"></span>
+                                </div>
+                            </div>
+                            <!-- <div class="row mb-3">
                                 <div class="col">
                                     <label for="genero" class="form-label">Gênero:</label>
                                     <div class=" d-flex form-check-inline">
@@ -76,22 +89,22 @@
                                     </div>
                                     <span class="error-message" id="erro-genero"></span>
                                 </div>
-                            </div>
+                            </div> -->
                             <h5 class="mt-5">Endereço</h5>
                             <div class="row mb-3 mt-3">
                                 <div class="col">
                                     <label for="cep" class="form-label">Cep:</label>
-                                    <input type="text" class="form-control required" id="cep" name="cep">
+                                    <input type="text" class="form-control required" id="cep" name="CEP">
                                     <span class="error-message" id="erro-cep"></span>
                                 </div>
                                 <div class="col">
                                     <label for="cidade" class="form-label">Cidade:</label>
-                                    <input type="text" class="form-control required" id="cidade" name="cidade">
+                                    <input type="text" class="form-control required" id="cidade" name="Cidade">
                                     <span class="error-message" id="erro-cidade"></span>
                                 </div>
                                 <div class="col">
                                     <label for="estado" class="form-label">Estado:</label>
-                                    <select class="form-control required" id="estado" name="estado">
+                                    <select class="form-control required" id="estado" name="Estado">
                                         <option value="" disabled selected>Selecione o estado</option>
                                     </select>
                                     <span class="error-message" id="erro-estado"></span>
@@ -100,24 +113,25 @@
                             <div class="row mb-3">
                                 <div class="col">
                                     <label for="rua" class="form-label">Rua:</label>
-                                    <input type="text" class="form-control required" id="rua" name="rua">
+                                    <input type="text" class="form-control required" id="rua" name="Rua">
                                     <span class="error-message" id="erro-rua"></span>
                                 </div>
                                 <div class="col">
                                     <label for="bairro" class="form-label">Bairro:</label>
-                                    <input type="text" class="form-control required" id="bairro" name="bairro">
+                                    <input type="text" class="form-control required" id="bairro" name="Bairro">
                                     <span class="error-message" id="erro-bairro"></span>
                                 </div>
                                 <div class="col">
                                     <label for="numero" class="form-label">Número:</label>
-                                    <input type="text" class="form-control required" id="numero" name="numero">
+                                    <input type="text" class="form-control required" id="numero" name="Numero">
                                     <span class="error-message" id="erro-numero"></span>
                                 </div>
                             </div>
+                            <div class="text-center mt-5">
+                                <input type="submit" value="Cadastrar" class="btn btn-outline-danger" name="btAdd" id="btCadastrar" />
+                            </div> 
                         </form>
-                        <div class="text-center mt-5">
-                            <input type="submit" value="Cadastrar" class="btn btn-outline-danger" name="btAdd" id="btSave" />
-                        </div> 
+                        
                     </div>
                     
                 </div>

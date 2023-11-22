@@ -22,7 +22,7 @@ async function adicionaEventoBotaoLogin(){
             e.preventDefault();
             console.log('Saindo');
             localStorage.setItem("logado", "false");
-            window.location.href = "#";
+            window.location.href = "clienteLogin.html";
         })
     } else {
       document.getElementById('appHeader').querySelector('.botaologin').addEventListener('click', function (e) {
