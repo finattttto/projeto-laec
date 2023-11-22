@@ -1,5 +1,11 @@
+import { createHeaderComponent } from "../components/header.js";
+
 const btSalvar = document.getElementById('btSave');
 const arrayClientes = JSON.parse(localStorage.getItem('clientes')) || [];
+
+window.onload = async function () {
+    document.getElementById('clienteCadastroHeader').innerHTML = await createHeaderComponent();
+}
 
 btSalvar.addEventListener('click', function (e) {
     e.preventDefault();
@@ -26,6 +32,8 @@ function salvarLocalStorage(cliente) {
     arrayClientes.push(cliente);
     console.log(cliente);
     localStorage.setItem('clientes', JSON.stringify(arrayClientes));
+    localStorage.setItem('logado', true);
+    window.location.href = 'index.html';
 }
 
 function emailJaCadastrado(email) {

@@ -82,7 +82,7 @@ async function criarListaNav() {
 
 async function criarContainerFormulario() {
   const formContainer = document.createElement("div");
-  formContainer.className = "container-fluid col-8 col-sm-6 col-md-5 col-lg-3";
+  formContainer.className = "container-fluid col-6 col-sm-6 col-md-5 col-lg-3";
   
   const searchForm = document.createElement("form");
   searchForm.className = "d-flex input-group";
@@ -115,7 +115,7 @@ async function criarContainerDireita() {
   cartIconLink.href = "carrinho.html";
   cartIconLink.innerHTML = '<i class="fas fa-shopping-cart"></i>';
   
-  const dropdown = await criarLogin();
+  const dropdown = await criarBotaoLogin();
   
   rightContainer.appendChild(cartIconLink);
   rightContainer.appendChild(dropdown);
@@ -123,31 +123,32 @@ async function criarContainerDireita() {
   return rightContainer;
 }
 
-async function criarLogin() {
+async function criarBotaoLogin() {
   const botao = document.createElement("div");
 
   const botaoLogin = document.createElement("button");
-  botaoLogin.className = "btn btn-primary d-flex align-items-center hidden-arrow";
+  botaoLogin.className = "btn btn-primary d-flex align-items-center hidden-arrow botaologin";
   botaoLogin.type = "button";
 
   const logado = localStorage.getItem("logado") || false;
 
+  // não funciona adicionar o event aqui por algum motivo
   if (logado === "true") {
     botaoLogin.textContent = "Sair";
-    botaoLogin.addEventListener("click", async function() {
-      e.preventDefault();
-      console.log('Sair');
-      localStorage.setItem("logado", "false");
-      window.location.href = "clientelogin.html";
-    });
+    // botaoLogin.addEventListener("click", function(e) {
+    //   e.preventDefault();
+    //   console.log('Sair');
+    //   localStorage.setItem("logado", "false");
+    //   window.location.href = "clientelogin.html";
+    // });
   } else {
     botaoLogin.textContent = "Entrar";
-    botaoLogin.addEventListener("click", async function(e) {
-      e.preventDefault();
+    // botaoLogin.addEventListener("click", function(e) {
+    //   e.preventDefault();
 
-      window.location.href = "index.html";
-      console.log('Entrando');
-    });
+    //   window.location.href = "index.html";
+    //   console.log('Entrando');
+    // });
   }
 
   botao.appendChild(botaoLogin);

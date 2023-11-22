@@ -9,6 +9,28 @@ window.onload = async function () {
     document.getElementById('appFooter').innerHTML = await createFooterComponent();
 
     await carregaCardsProdutos();
+    await adicionaEventoBotaoLogin();
+}
+
+// não estava funcionando com colocando o evento de click direto no createElement,
+// então ele recupera o botão e adiciona o evento aqui...
+async function adicionaEventoBotaoLogin(){
+    const logado = localStorage.getItem("logado") || false;
+
+    if (logado === "true") {
+        document.getElementById('appHeader').querySelector('.botaologin').addEventListener('click', function (e) {
+            e.preventDefault();
+            console.log('Saindo');
+            localStorage.setItem("logado", "false");
+            window.location.href = "#";
+        })
+    } else {
+      document.getElementById('appHeader').querySelector('.botaologin').addEventListener('click', function (e) {
+            e.preventDefault();
+            console.log('Entrando');
+            window.location.href = "clienteLogin.html";
+        })
+    }
 }
 
 async function carregaCardsProdutos() {
@@ -62,7 +84,7 @@ function criaCard(cardData) {
         </div>
     `;
 
-    //Implementando função de adicionar ao carrinho no botão 'carrinho' do card
+    // botão de adicionar ao carrinho no botão do card
     card.querySelector('.carrinho').addEventListener('click', function (e) {
 
         e.preventDefault();

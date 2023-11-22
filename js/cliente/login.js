@@ -11,6 +11,8 @@ btLogin.addEventListener('click', function (e) {
         if(cli.email === email){
             if(cli.senha === senha){
                 alert("Login realizado com sucesso!");
+                localStorage.setItem("logado", true);
+                window.location.href = "index.html";
                 return;
             }else{
                 alert("Senha incorreta!");
