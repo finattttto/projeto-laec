@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+  }
+
+  #clienteCadastroFooter {
+    margin-top: auto; 
+  }
+  
+  #clienteLoginFooter {
+    margin-top: auto; 
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.errofont{
+    color: #f00;
+}
+
+.erroinput{
+    border: solid 1px #F00;
+}

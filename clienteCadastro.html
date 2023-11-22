@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/cliente.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <title>Login</title>
 </head>
@@ -16,35 +16,117 @@
     </header>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-lg-6 col-md-6 mx-auto">
+            <div class="col-lg-8 col-md-8 mx-auto">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Cadastro</h4>
+                        <h3 class="card-title">Cadastro</h3>
                     </div>
                     <div class="card-body">
-                        <form method="post" id="form-add" action="">
-                            <div class="form-group mt-2">
-                                <label for="name">Nome</label>
-                                <input type="text" id="name" name="name" class="form-control validar name" />
+                        <form method="post" id="form-cadastro" action="">
+                            <h5 class="mt-1">Dados pessoais</h5>
+                            <div class="row mb-3 mt-3">
+                                <div class="col">
+                                    <label for="nome" class="form-label">Nome:</label>
+                                    <input type="text" class="form-control required" id="name" name="nome">
+                                    <span class="error-message" id="erro-nome"></span>
+                                </div>
+                                <div class="col">
+                                    <label for="cpf" class="form-label">CPF:</label>
+                                    <input type="text" class="form-control required" id="cpf" name="cpf">
+                                    <span class="error-message" id="erro-cpf"></span>
+                                </div> 
                             </div>
-                            <div class="form-group mt-2">
-                                <label for="email">E-mail</label>
-                                <input type="text" id="email" name="email" class="form-control validar email" />
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="email" class="form-label">E-mail:</label>
+                                    <input type="text" class="form-control required" id="email" name="email">
+                                    <span class="error-message" id="erro-email"></span>
+                                </div>
+                                <div class="col">
+                                    <label for="telefone" class="form-label">Telefone:</label>
+                                    <input type="text" class="form-control required" id="telefone" name="telefone">
+                                    <span class="error-message" id="erro-telefone"></span>
+                                </div>
                             </div>
-                            <div class="form-group mt-2">
-                                <label for="senha">Senha</label>
-                                <input type="text" id="senha" name="senha" class="form-control validar senha" />
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="genero" class="form-label">Gênero:</label>
+                                    <div class=" d-flex form-check-inline">
+                                        <div class="form-check me-2">
+                                            <input class="form-check-input required" type="radio" name="genero" id="masculino"
+                                                value="masculino">
+                                            <label class="form-check-label" for="masculino">
+                                                Masculino
+                                            </label>
+                                        </div>
+                                        <div class="form-check  me-2">
+                                            <input class="form-check-input required" type="radio" name="genero" id="feminino"
+                                                value="feminino">
+                                            <label class="form-check-label" for="feminino">
+                                                Feminino
+                                            </label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input required" type="radio" name="genero" id="outro"
+                                                value="outro">
+                                            <label class="form-check-label" for="outro">
+                                                Outro
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <span class="error-message" id="erro-genero"></span>
+                                </div>
                             </div>
-                            <div class="center mt-5">
-                                <input type="submit" value="Salvar" class="btn btn-outline-danger" name="btAdd" id="btSave" />
+                            <h5 class="mt-5">Endereço</h5>
+                            <div class="row mb-3 mt-3">
+                                <div class="col">
+                                    <label for="cep" class="form-label">Cep:</label>
+                                    <input type="text" class="form-control required" id="cep" name="cep">
+                                    <span class="error-message" id="erro-cep"></span>
+                                </div>
+                                <div class="col">
+                                    <label for="cidade" class="form-label">Cidade:</label>
+                                    <input type="text" class="form-control required" id="cidade" name="cidade">
+                                    <span class="error-message" id="erro-cidade"></span>
+                                </div>
+                                <div class="col">
+                                    <label for="estado" class="form-label">Estado:</label>
+                                    <select class="form-control required" id="estado" name="estado">
+                                        <option value="" disabled selected>Selecione o estado</option>
+                                    </select>
+                                    <span class="error-message" id="erro-estado"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="rua" class="form-label">Rua:</label>
+                                    <input type="text" class="form-control required" id="rua" name="rua">
+                                    <span class="error-message" id="erro-rua"></span>
+                                </div>
+                                <div class="col">
+                                    <label for="bairro" class="form-label">Bairro:</label>
+                                    <input type="text" class="form-control required" id="bairro" name="bairro">
+                                    <span class="error-message" id="erro-bairro"></span>
+                                </div>
+                                <div class="col">
+                                    <label for="numero" class="form-label">Número:</label>
+                                    <input type="text" class="form-control required" id="numero" name="numero">
+                                    <span class="error-message" id="erro-numero"></span>
+                                </div>
                             </div>
                         </form>
+                        <div class="text-center mt-5">
+                            <input type="submit" value="Cadastrar" class="btn btn-outline-danger" name="btAdd" id="btSave" />
+                        </div> 
                     </div>
+                    
                 </div>
-            </div>
-            
+                
+            </div>    
         </div>
     </div>
+    <br>
+    <div id="clienteCadastroFooter" class="bg-dark text-center text-white" ></div>
     <script src="./js/cliente/cadastro.js" type="module"></script>
 </body>
 

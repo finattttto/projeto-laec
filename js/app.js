@@ -68,6 +68,7 @@ function criaCard(cardData) {
 
     //Construindo o card
     card.innerHTML = `
+    <a href="paginaProduto.html">
         <div class="card w-100 shadow-5-strong">
             <div class="mx-auto w-70 pt-3">
                 <img src="${cardData.imagem}" class="card-img-top img-fluid shadow-5-strong" alt="Capa"/>
@@ -77,11 +78,12 @@ function criaCard(cardData) {
                 <p class="card-text">${cardData.preco}</p>
                 <div class="text-end">
                     <button type="button" class="btn btn-dark btn-rounded carrinho">
-                        Carrinho
+                     Carrinho
                     </button>
                 </div>
             </div>
         </div>
+    </a>
     `;
 
     // botão de adicionar ao carrinho no botão do card
